@@ -1,0 +1,18 @@
+;MOD_ID|hev.FastSensors
+;MOD_NAME|Efficient Sensor Displays
+;MOD_ICON|https://github.com/rwqfsfasxc100/EfficientSensorDisplays/raw/refs/heads/main/icon.stex
+;AUTHOR|__hev
+;MOD_ZIP_NAME|EfficientSensorDisplays.zip
+
+[center][b]Efficient Sensor Displays[/b][/center]
+
+Reworks text and equipment sensors to use multiple threads to reduce the time taken per frame.
+
+Fully configurable in the config menu to change how much the HUD updates:
+- Sensor tick rate (hz) -> How many times the HUD runs the sensor update poll
+- Packet count -> How many batches the sensors should be split into, with one batch processed per update poll.
+- Only update valid sensor outputs -> Doesn't update sensors if their output is invalid.
+
+Highly granularity for update rate: Ranges from 225 times slower to 4 times faster than the Vanilla update rate through a mix of the mod's configs.
+
+Does not currently support: LIDAR, cargo scanner (both on-board and remote), autopilot overlay, manual vector display, and OMS system display.

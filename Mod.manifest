@@ -1,0 +1,51 @@
+[mod_information]
+
+name="FASTSENSORS_NAME"
+id="hev.FastSensors"
+description="FASTSENSORS_DESC"
+brief="FASTSENSORS_BRIEF"
+author="__hev"
+
+[version]
+
+version_major=1
+version_minor=0
+version_bugfix=0
+
+[configs]
+
+FASTSENSORS_CONFIG_SECT_GENERAL={
+"sensor_packet_count": {
+"default": 1.0,
+"description": "FASTSENSORS_CONFIG_PACKET_CT_DESC",
+"display_order_position": 1,
+"max": 15.0,
+"min": 1.0,
+"name": "FASTSENSORS_CONFIG_PACKET_CT",
+"step": 1.0,
+"style": "slider",
+"type": "int"
+},
+"sensor_tick_rate": {
+"default": 15.0,
+"description": "FASTSENSORS_CONFIG_TICK_RATE_DESC",
+"display_order_position": 0,
+"max": 60.0,
+"min": 1.0,
+"name": "FASTSENSORS_CONFIG_TICK_RATE",
+"step": 1.0,
+"style": "slider",
+"type": "int"
+},
+"show_only_valid_outputs": {
+"default": false,
+"description": "FASTSENSORS_CONFIG_NO_NULL_VALUES_DESC",
+"display_order_position": 2,
+"name": "FASTSENSORS_CONFIG_NO_NULL_VALUES",
+"type": "bool"
+}
+}
+
+[manifest_definitions]
+
+manifest_version=2.2

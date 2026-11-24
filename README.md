@@ -2,7 +2,7 @@
 
 Reworks text and equipment sensors to use multiple threads to reduce the time taken per frame.
 
-> [!WARNING]
+> [!CAUTION]
 > This mod relies on a feature not currently in stable releases.
 > As a result, this requires the latest bleeding-edge build.
 

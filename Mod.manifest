@@ -68,4 +68,5 @@ dependancy_mod_ids=[ {
 "minimum_version": [ 1, 18, 4 ],
 "mod_id": "hev.LIBRARY"
 } ]
+manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/EfficientSensorDisplays/refs/heads/main/Mod.manifest"
 minimum_game_version=PoolIntArray( 1, 93, 1 )

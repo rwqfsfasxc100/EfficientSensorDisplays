@@ -13,4 +13,8 @@ Fully configurable in the config menu to change how much the HUD updates:
 
 Highly granularity for update rate: Ranges from 225 times slower to 4 times faster than the Vanilla update rate through a mix of the mod's configs.
 
+> [!WARNING]
+> Requires HevLib to function
+> https://github.com/rwqfsfasxc100/HevLib/releases
+
 Does not currently support: LIDAR, cargo scanner (both on-board and remote), autopilot overlay, manual vector display, and OMS system display.

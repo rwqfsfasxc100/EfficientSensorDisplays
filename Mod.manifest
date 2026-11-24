@@ -48,4 +48,9 @@ FASTSENSORS_CONFIG_SECT_GENERAL={
 
 [manifest_definitions]
 
-manifest_version=2.2
+manifest_version=2.3
+dependancy_mod_ids=[ {
+"minimum_version": [ 1, 18, 4 ],
+"mod_id": "hev.LIBRARY"
+} ]
+minimum_game_version=PoolIntArray( 1, 93, 1 )

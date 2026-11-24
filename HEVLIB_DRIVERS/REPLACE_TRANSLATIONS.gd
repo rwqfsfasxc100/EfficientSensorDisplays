@@ -23,16 +23,16 @@ const TRANSLATIONS = {
 			"version_hash": 1895391657
 		},
 		"FASTSENSORS_CONFIG_TICK_RATE_DESC": {
-			"string": "The frequency at which sensors will be sent an update packet.\n\nThis is measured as [code]1[/code] / [code]n[/code]",
-			"version_hash": 1998835144
+			"string": "The frequency at which sensors will be sent an update packet.\n\nThis is measured as 1 / n",
+			"version_hash": 558880350
 		},
 		"FASTSENSORS_CONFIG_PACKET_CT": {
 			"string": "Packet count",
 			"version_hash": 3593071686
 		},
 		"FASTSENSORS_CONFIG_PACKET_CT_DESC": {
-			"string": "How much to split the sensor updates by, with one packet being processed per sensor tick. The higher this value, the longer it takes for sensors to update with the same tick rate.",
-			"version_hash": 2734287260
+			"string": "How much to split the sensor updates by, with one packet being processed per sensor tick.\nThe higher this value, the longer it takes for sensors to update with the same tick rate.",
+			"version_hash": 1648547014
 		},
 		"FASTSENSORS_CONFIG_NO_NULL_VALUES": {
 			"string": "Only update valid sensor outputs",
@@ -41,6 +41,10 @@ const TRANSLATIONS = {
 		"FASTSENSORS_CONFIG_NO_NULL_VALUES_DESC": {
 			"string": "Prevents sensors from updating if their value would be invalid",
 			"version_hash": 2838817658
+		},
+		"FASTSENSORS_DESC": {
+			"string": "Reworks text and equipment sensors to use multiple threads to reduce the time taken per frame.\n\nFully configurable in the config menu to change how much the HUD updates, including how quickly it runs the checks, how many batches to split processing into, and stopping null sensor values from being updated.\n\nHighly granularity for update rate; can range from 225 times slower to 4 times faster than the Vanilla update rate.\n\nDoes not currently support: LIDAR, cargo scanner (both on-board and remote), autopilot overlay, manual vector display, and OMS system display.",
+			"version_hash": 896990370
 		}
 	}
 }
